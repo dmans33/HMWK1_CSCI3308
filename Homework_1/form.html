@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <title>Form</title>
+      </head>
+      <div style="background: silver;">
+      <body>
+        <h1 class="text-center">Add New Article</h1>
+        <br></br>
+
+        <style>
+          .container{
+            background-color: tan;
+          }
+        </style>
+
+        <div class="container">
+          <form>
+            <div class="form-group">
+              <h3 for="articleTitle">Article Title</h3>
+              <input type="text" class="form-control" id="articleTitle" placeholder="Title">
+            </div>
+            <div class="form-group">
+              <h3 for="authorName">Author Name</h3>
+              <input type="text" class="form-control" id="authorName" placeholder="Name">
+            </div>
+            <div class="row">
+              <div class="col">
+                <h3 for="files">Upload Files:</h3>
+                <input type="file" class="form-control" id="files" name="filename">
+              </div>
+              <div class="col">
+                <h3 for="page">Pages:</h3>
+                <select id="page" class="form-control">
+                  <option selected>Choose...</opttion>
+                  <option>Academics</option>
+                  <option>Sports</option>
+                  <option>About Me</option>
+                  <option>Miscellaneous</option>
+                </select>
+              </div>
+            </div>
+            <br></br>
+            <div class="form-group">
+                <h3 for="articleText">Article Text</h3>
+                <textarea class="form-control" id="articleText" rows="15"></textarea>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <h3>Select Tags</h3>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="num1" value="python">
+                  <label class="form-check-label" for="num1">Python</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="num2" value="c++">
+                  <label class="form-check-label" for="num2">C++</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="num3" value="java">
+                  <label class="form-check-label" for="num3">Java</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="num4" value="scala">
+                  <label class="form-check-label" for="num4">Scala</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="num5" value="perl">
+                  <label class="form-check-label" for="num5">Perl</label>
+                </div>
+              </div>
+              <div class="col">
+                <h3>Visibility</h3>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="radioOptions" id="rad1" value="pub">
+                  <label class="form-check-label" for="rad1">Public</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="radioOptions" id="rad2" value="priv">
+                  <label class="form-check-label" for="rad2">Private</label>
+                </div>
+              </div>
+            </div>
+            <br></br>
+
+            <h3>Login to Finish Submitting</h3>
+            <div class="row">
+              <div class="col">
+                <input type="text" class="form-control" id="uName" placeholder="Username">
+              </div>
+              <div class="col">
+                <input type="password" class="form-control" id="pass" placeholder="Password">
+              </div>
+            </div>
+            <p> </p>
+
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="remember" value="remember">
+              <label class="form-check-label" for="remember">Remember Me</label>
+            </div>
+            <p></p>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+        </div>
+
+
+
+
+
+      </body>
+    </div>
+    </html>
